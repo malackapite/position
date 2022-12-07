@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    background-color: lightskyblue;
+}
+article{
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3,1fr);
+    top: 500px;
+}
+
+header, footer{
+    background-color: greenyellow;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    z-index: 2;
+}
+footer{
+    bottom: 0;
+}
+img{
+    width: 100%;
+    max-width: 400px;
+}
+
+.megjelen{
+    position: absolute;
+    top: -500px;
+    left: calc((100% - 400px) / 2);
+}
+
+.kiskep:hover{
+    z-index: 1;
+}
+nav{
+    position: relative;
+    top:30px;
+}
+nav *{
+    display: inline;
+}
+#ez *{
+    visibility: hidden;
+    
+}
+#ez:hover *{
+    visibility: visible;
+    display: block;
+}
